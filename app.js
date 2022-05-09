@@ -1,3 +1,35 @@
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
+
+function loginButtonHandler(){
+    console.log(loginInput.value);
+}
+
+loginButton.addEventListener("click",loginButtonHandler)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
 // const player= {
 //     name : "cino",
 //     points : 10,
@@ -147,10 +179,10 @@
 // h1.addEventListener("click", clickHandler);
 
 
-const h1 = document.querySelector(".hello h1");
+// const h1 = document.querySelector(".hello h1");
 
-function titleClickHandler(){
-    h1.classList.toggle("clicked");
-}
+// function titleClickHandler(){
+//     h1.classList.toggle("clicked");
+// }
 
-h1.addEventListener("click", titleClickHandler);
+// h1.addEventListener("click", titleClickHandler);
