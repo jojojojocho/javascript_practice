@@ -81,14 +81,76 @@
 //     console.log("80up");
 // }
 
-// const title = document.getElementById("title");
-// title.innerText = "Got you!";
-// console.dir(title.id);
-// console.dir(title.className);
+// const h1 = document.getElementById("h1");
+// h1.innerText = "Got you!";
+// console.dir(h1.id);
+// console.dir(h1.className);
 
 
-const title = document.querySelector(".hello")
-
-console.dir(title);
+// const h1 = document.querySelector(".hello h1");
 
 
+// function clickHandler(){
+//     h1.style.color="red";
+// }
+
+// function mouseEnterHandler(){
+//     h1.innerText = "Mouse on!";
+// }
+
+// function mouseLeaveHandler(){
+//     h1.innerText = "Mouse off!";
+// }
+
+// function windowResizeHandler(){
+//     document.body.style.backgroundColor = "green";
+// }
+
+// function windowCopyHandler(){
+//     alert("copy");
+// }
+
+// function windowOfflineHandler(){
+//     alert("offline");
+// }
+// function windowOnlineHandler(){
+//     alert("online");
+// }
+
+// h1.addEventListener("click", clickHandler);
+// h1.addEventListener("mouseenter", mouseEnterHandler);
+// h1.addEventListener("mouseleave", mouseLeaveHandler );
+
+// window.addEventListener("resize", windowResizeHandler);
+// window.addEventListener("copy", windowCopyHandler);
+// window.addEventListener("offline", windowOfflineHandler);
+// window.addEventListener("online", windowOnlineHandler);
+
+
+// const h1 = document.querySelector(".hello h1");
+
+// function clickHandler(){
+//     const currentColor = h1.style.color;
+//     let newColor;
+//     if (currentColor === "blue"){
+//         newColor = "tomato";
+//     }else {
+//         newColor = "blue";
+//     }
+//     h1.style.color = newColor;
+// }
+
+// function mouseEnterHandler(){
+//     h1.innerText = "Mouse on!";
+// }
+
+// h1.addEventListener("click", clickHandler);
+
+
+const h1 = document.querySelector(".hello h1");
+
+function titleClickHandler(){
+    h1.classList.toggle("clicked");
+}
+
+h1.addEventListener("click", titleClickHandler);
