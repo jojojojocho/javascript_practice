@@ -36,7 +36,7 @@
 // }
 
 
-// player.sayHello("lynn");
+// player.sayHello("john");
 
 
 
@@ -68,17 +68,17 @@
 // const age = parseInt(prompt('How old are u?'));
 
 // if(isNaN(age) || age < 0){
-//     console.log("Please write a real positive number");
+//     console.log("Please write a positive number");
 // }else if (age<18){
-//     console.log("You are too young.");
+//     console.log("18down");
 // }else if(age>=18 && age<=50){
-//     console.log("you can drink.!");
+//     console.log("18up 50down");
 // }else if(age >50 && age<=80){
-//     console.log("You should excercise!");
+//     console.log("50up 80down");
 // }else if(age === 100){
-//     console.log("You are wise");
+//     console.log("100up");
 // }else  if(age > 80 ){
-//     console.log("You can do whatever you want!");
+//     console.log("80up");
 // }
 
 // const title = document.getElementById("title");
@@ -87,8 +87,8 @@
 // console.dir(title.className);
 
 
-const title = document.querySelector(".hello h1")
+const title = document.querySelector(".hello")
 
-console.log(title);
+console.dir(title);
 
 
