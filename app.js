@@ -1,12 +1,39 @@
+//login 폼 변수
 const loginForm = document.querySelector("#login-form");
-const loginInput = loginForm.querySelector("input");
-const loginButton = loginForm.querySelector("button");
+const logingFormInput = loginForm.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-function loginButtonHandler(){
-    console.log(loginInput.value);
+//스트링 변수
+const HIDDEN_STRING = "hidden";
+const USERNAME_STRING = "username";
+
+function loginSubmit(event){
+    event.preventDefault();
+    const username = logingFormInput.value;
+    loginForm.classList.add(HIDDEN_STRING);
+    localStorage.setItem(USERNAME_STRING, username);
+    makeGreeting(username);
 }
 
-loginButton.addEventListener("click",loginButtonHandler)
+function makeGreeting(name){
+    greeting.innerText =`환영합니다. ${name}님`;
+    greeting.classList.remove(HIDDEN_STRING);
+}
+
+
+
+const savedUsername = localStorage.getItem(USERNAME_STRING);
+
+
+if(savedUsername ===null){
+    loginForm.classList.remove(HIDDEN_STRING);
+    loginForm.addEventListener("submit" , loginSubmit);
+    
+}else{
+
+    makeGreeting(savedUsername);
+}
+
 
 
 
