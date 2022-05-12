@@ -40,7 +40,7 @@ function paintToDo(toDo){
 
     //버튼에 표시될 텍스트 작성
     button.className = "btn";
-    button.innerText = "삭제";
+    button.innerText = "X";
 
 
     //li 엘리먼트에 span과 button을 자식으로 추가

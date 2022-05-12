@@ -1,6 +1,7 @@
 //id를 이용해 element 검색
 const clock = document.querySelector("h2#clock");
 
+
 //interval
 function getTime(){
     const date = new Date();
@@ -11,5 +12,5 @@ function getTime(){
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-getTime()
+getTime();
 setInterval(getTime,1000);
