@@ -39,6 +39,7 @@ function paintToDo(toDo){
     const button = document.createElement("button");
 
     //버튼에 표시될 텍스트 작성
+    button.className = "btn";
     button.innerText = "삭제";
 
 

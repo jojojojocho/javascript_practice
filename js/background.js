@@ -13,7 +13,10 @@ const choice = images[Math.floor(Math.random()*images.length)];
 bgImage = document.createElement("img");
 bgImage.src = `img/${choice}`;
 
-document.body.appendChild(bgImage);
+
+document.body.style.backgroundImage=`url(${bgImage.src})`;
+document.body.style.backgroundRepeat="no-repeat";
+document.body.style.backgroundSize="cover";
 
 
 
