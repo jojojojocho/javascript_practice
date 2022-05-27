@@ -64,16 +64,16 @@
 }
 
 #todo-form{
-    font-family: 'cursive', cursive; font-size: 3em; 
+    font-family: 'cursive', cursive; font-size: 4em; 
     text-align: right; 
     color: #d67f57; 
     text-shadow: 5px 5px #2D63A7; 
     margin: 0;
 }
 #todo-list{
-    font-family: 'Georgia', cursive; font-size: 1em; 
+    font-family: 'Georgia', cursive; font-size: 2em; 
     text-align: right; 
-    color: #d67f57; 
+    color: #16f70e; 
     text-shadow: 1px 1px #2D63A7; 
     margin: 0;
 }
@@ -84,3 +84,19 @@ input{
     border-radius: 4px;
     font-size: 20px;
 }
+
+#quote {
+    font-family: 'Dongle', sans-serif;
+    font-size: 3em;
+    text-align: right;
+    color: #210bcf;
+    margin: 0;
+  }
+
+  #weather {
+    font-family: 'Dongle', sans-serif;
+    font-size: 2em;
+    text-align: right;
+    color: #e70707;
+    margin: 0;
+  }
